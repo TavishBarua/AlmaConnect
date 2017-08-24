@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/icn_user_profile"
+            android:title="People" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/nav_event"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_add_events"
+            android:icon="@drawable/drawer_add_vacan"
+            android:title="Add Events" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/nav_vac"
+            android:title="Vacancies" />
+        <item
+            android:id="@+id/nav_add_vacan"
+            android:icon="@drawable/drawer_add_vacan"
+            android:title="Add Vacancies" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/drawer_group"
+            android:title="Groups" />
+        <item
+            android:id="@+id/nav_news_updates"
+            android:icon="@drawable/nav_news"
+            android:title="News &amp; Updates" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/drawer_prfile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/nav_news"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nav_logout"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/nav_contact_us"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/nav_help"
+                android:title="Help &amp; Feedback" />
+        </menu>
+    </item>-->
+
+</menu>

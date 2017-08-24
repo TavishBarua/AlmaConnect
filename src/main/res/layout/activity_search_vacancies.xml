@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ued.alumni.ForgotPassword">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryLight_back"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:drawableLeft="@drawable/key_skills"
+            android:drawablePadding="10dp"
+            android:background="@android:color/transparent"
+            android:textColorHint="@android:color/white"
+            android:hint="KeySkills,Designation,Companies"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_state"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:focusable="false"
+                android:drawableLeft="@drawable/key_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:textColorHint="@android:color/white"
+                android:hint="Location"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="60dp"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_experience"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/key_down"
+                    android:focusable="false"
+                    android:hint="Experience"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_salary"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/key_down"
+                    android:focusable="false"
+                    android:hint="Min Salary(INR)"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Search jobs"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@drawable/button_back_search"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROWSE JOBS BY CATEGORY"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+
+                android:layout_marginRight="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:padding="15dp"
+                   android:src="@drawable/notebook"
+                   />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Non IT Jobs"
+                    android:gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="15dp"
+                        android:src="@drawable/it_search"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IT Jobs"
+                        android:gravity="center_horizontal"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="serif-monospace"
+                        android:textColor="@color/colorPrimary"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryLight_back"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="150dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryLight_back"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="15dp"
+                            android:src="@drawable/headphones"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ITES/BPO"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryLight_back"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryLight_back"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="15dp"
+                            android:src="@drawable/notebook"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Healthcare Jobs"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ECEFF1"
+    android:layout_height="match_parent"
+    tools:context="com.ued.alumni.Vacancies">
+
+    <!--<ImageView
+        android:id="@+id/iv_login_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_without_background"
+        android:elevation="5dp"
+        android:padding="3dp"
+        android:src="@drawable/job_vacancies"
+        app:layout_anchor="@+id/login_card"
+        app:layout_anchorGravity="center|top" />
+-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        app:cardUseCompatPadding="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/event_venue"
+                android:drawablePadding="14dp"
+                android:hint="Company Name"
+                android:id="@+id/et_vacan_cmp_name"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/category"
+                android:drawablePadding="14dp"
+                android:clickable="true"
+                android:id="@+id/et_vacan_cat"
+                android:focusable="false"
+                android:hint="Category"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vacanies_job_profile"
+                android:drawablePadding="14dp"
+                android:id="@+id/et_vacan_profile"
+                android:hint="Job profile"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vacan_location"
+                android:drawablePadding="14dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:id="@+id/et_vacan_state"
+                android:hint="Location"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vacancies_exerience"
+                android:drawablePadding="14dp"
+                android:id="@+id/et_vacan_experience"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Experience"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vacan_package"
+                android:drawablePadding="14dp"
+                android:hint="Package"
+                android:id="@+id/et_vacan_package"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vacan_last_date"
+                android:drawablePadding="14dp"
+                android:hint="Last Date of applying"
+                android:id="@+id/et_vacan_last_date"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/colorText"
+                android:textSize="15dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fadeScrollbars="false"
+                android:hint="Details"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:id="@+id/et_vacan_details"
+                android:drawableLeft="@drawable/vacan_details"
+                android:drawablePadding="10dp"
+                android:minLines="1"
+                android:maxLength="75"
+                android:paddingLeft="10dp"
+                android:paddingRight="6dp"
+                android:scrollbars="vertical"
+                android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_vacan_text_count"
+                    android:gravity="right"
+                    android:text="0/75"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/btn_add_vacan_submit"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_button"
+                android:elevation="5dp"
+                android:shadowColor="@color/cardview_shadow_end_color"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_add_vacancies"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

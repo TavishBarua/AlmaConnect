@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78909c</color>
+    <color name="colorPrimaryDark">#37474f</color>
+    <color name="colorAccent">#78909c</color>
+    <color name="white">#ffffff</color>
+    <color name="rippleColorFbBtn">#304ffe</color>
+    <color name="background">#ECEFF1</color>
+    <color name="butto_color">#03A9F4</color>
+    <color name="green_bright">#AFEA5E</color>
+    <color name="colorText">#232a34</color>
+    <color name="colorPrimaryLight">#cc78909c</color>
+    <color name="yellow_circle">#EDEDEA</color>
+    <color name="sub_title_color_light">#5ED9EA</color>
+    <color name="colorPrimaryLight_back">#3378909c</color>
+</resources>

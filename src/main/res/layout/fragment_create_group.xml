@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ued.alumni.Fragments.CreateGroup">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        app:cardUseCompatPadding="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/event_venue"
+                    android:drawablePadding="14dp"
+                    android:hint="Group Name"
+                    android:id="@+id/et_grp_name"
+                    android:textColor="@color/colorText"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batch Year"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/category"
+                    android:drawablePadding="14dp"
+                    android:clickable="true"
+                    android:id="@+id/et_grp_batch"
+                    android:focusable="false"
+                    android:hint="From"
+                    android:textColor="@color/colorText"
+                    android:textSize="15dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/category"
+                        android:drawablePadding="14dp"
+                        android:clickable="true"
+                        android:id="@+id/et_grp_batch1"
+                        android:focusable="false"
+                        android:hint="To"
+                        android:textColor="@color/colorText"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/vacanies_job_profile"
+                    android:drawablePadding="14dp"
+                    android:id="@+id/et_grp_desc"
+                    android:hint="Group Description"
+                    android:textColor="@color/colorText"
+                    android:textSize="15dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/vacan_location"
+                    android:drawablePadding="14dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/et_vacan_state"
+                    android:hint="Members Limit"
+                    android:textColor="@color/colorText"
+                    android:textSize="15dp" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fadeScrollbars="false"
+                        android:hint="Post to Invite"
+                        android:inputType="textMultiLine"
+                        android:maxLines="6"
+                        android:id="@+id/et_invite_post_text"
+                        android:drawableLeft="@drawable/vacan_details"
+                        android:drawablePadding="10dp"
+                        android:minLines="1"
+                        android:maxLength="75"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="6dp"
+                        android:scrollbars="vertical"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_vacan_text_count"
+                        android:gravity="right"
+                        android:text="0/75"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_create_new_grp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_button"
+                    android:elevation="5dp"
+                    android:shadowColor="@color/cardview_shadow_end_color"
+                    android:text="Create Group"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

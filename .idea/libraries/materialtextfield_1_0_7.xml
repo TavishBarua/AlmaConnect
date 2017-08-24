@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="materialtextfield-1.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/a9dd3ca8ca7ab9d59908b40ad931eb7c3f0092d5/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/a9dd3ca8ca7ab9d59908b40ad931eb7c3f0092d5/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/materialtextfield/1.0.7/8c3c4ac87add91016e79ce875170d5fcdd1ff9c6/materialtextfield-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
