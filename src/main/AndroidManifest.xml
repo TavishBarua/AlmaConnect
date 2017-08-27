@@ -49,7 +49,12 @@
         <activity
             android:name=".People"
             android:label="@string/title_activity_people"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SubActivities.Non_IT_Jobs" />
+        <activity android:name=".SubActivities.NonITJobDescription" />
+        <activity android:name=".SubActivities.IT_Jobs" />
+        <activity android:name=".SubActivities.ITJobDescription" />
+        <activity android:name=".Group_Profile"></activity>
     </application>
 
 </manifest>

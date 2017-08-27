@@ -184,5 +184,705 @@
             </LinearLayout>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_below="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/userDescripll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civallpostuserpic1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/circle_boundary"
+                    android:src="@drawable/post_contact"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvallpostusername1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Username"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvallposttime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="12:30 pm"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/ripple1"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginRight="-6dp"
+                    app:mrl_rippleAlpha="0.3"
+                    app:mrl_rippleColor="@color/rippleColorFbBtn"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleDimension="5dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/allpostFeedOption1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:src="@drawable/icon_option" />
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDescripll3"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <!-- <TextView
+                     android:id="@+id/tvallpostdescription"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:fontFamily="sans-serif"
+                     android:text="kNJDBJBJBJDBJD"
+                     android:textColor="@color/postMessage" />-->
+
+                <TextView
+                    android:id="@+id/tvallpostdescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="Having an awesome day with my friends\n#clgfest"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/ivallpostpic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="340dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvallpostcommentcount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="end"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostcomment1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:padding="8.5dp"
+                        android:src="@drawable/post_comment" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostshare1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="8dp"
+                        android:src="@drawable/post_share" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_below="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/userDescripll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civallpostuserpic2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/circle_boundary"
+                    android:src="@drawable/post_contact"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvallpostusername2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Username"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvallposttime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="12:30 pm"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/ripple2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginRight="-6dp"
+                    app:mrl_rippleAlpha="0.3"
+                    app:mrl_rippleColor="@color/rippleColorFbBtn"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleDimension="5dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/allpostFeedOption2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:src="@drawable/icon_option" />
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDescripll4"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <!-- <TextView
+                     android:id="@+id/tvallpostdescription"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:fontFamily="sans-serif"
+                     android:text="kNJDBJBJBJDBJD"
+                     android:textColor="@color/postMessage" />-->
+
+                <TextView
+                    android:id="@+id/tvallpostdescription3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="Lost all my contacts. Please ping your contact number\n#feelingsicked"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/ivallpostpic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="340dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvallpostcommentcount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="end"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostcomment2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:padding="8.5dp"
+                        android:src="@drawable/post_comment" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostshare2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="8dp"
+                        android:src="@drawable/post_share" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_below="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/userDescripll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civallpostuserpic3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/circle_boundary"
+                    android:src="@drawable/post_contact"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvallpostusername3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Username"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvallposttime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="12:30 pm"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/ripple3"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginRight="-6dp"
+                    app:mrl_rippleAlpha="0.3"
+                    app:mrl_rippleColor="@color/rippleColorFbBtn"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleDimension="5dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/allpostFeedOption3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:src="@drawable/icon_option" />
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDescripll5"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <!-- <TextView
+                     android:id="@+id/tvallpostdescription"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:fontFamily="sans-serif"
+                     android:text="kNJDBJBJBJDBJD"
+                     android:textColor="@color/postMessage" />-->
+
+                <TextView
+                    android:id="@+id/tvallpostdescription4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="Lost all my contacts. Please ping your contact number\n#feelingsicked"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/ivallpostpic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="340dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvallpostcommentcount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="end"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostcomment3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:padding="8.5dp"
+                        android:src="@drawable/post_comment" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostshare3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="8dp"
+                        android:src="@drawable/post_share" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view4"
+        android:layout_below="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/userDescripll6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civallpostuserpic4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/circle_boundary"
+                    android:src="@drawable/post_contact"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvallpostusername4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Username"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvallposttime4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="12:30 pm"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/ripple4"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginRight="-6dp"
+                    app:mrl_rippleAlpha="0.3"
+                    app:mrl_rippleColor="@color/rippleColorFbBtn"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleDimension="5dp"
+                    app:mrl_rippleDuration="350"
+                    app:mrl_rippleFadeDuration="75"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/allpostFeedOption4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:src="@drawable/icon_option" />
+                    </RelativeLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userDescripll6"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <!-- <TextView
+                     android:id="@+id/tvallpostdescription"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:fontFamily="sans-serif"
+                     android:text="kNJDBJBJBJDBJD"
+                     android:textColor="@color/postMessage" />-->
+
+                <TextView
+                    android:id="@+id/tvallpostdescription5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="In Love with my Crush\n#SeniorCrush"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/ivallpostpic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="340dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvallpostcommentcount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="end"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostcomment4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:background="@android:color/transparent"
+                        android:padding="8.5dp"
+                        android:src="@drawable/post_comment" />
+
+                    <ImageView
+                        android:id="@+id/ivallpostshare4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="8dp"
+                        android:src="@drawable/post_share" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>
 </ScrollView>

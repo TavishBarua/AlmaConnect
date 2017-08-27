@@ -1,5 +1,6 @@
 package com.ued.alumni;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +12,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+
+import com.ued.alumni.SubActivities.IT_Jobs;
+import com.ued.alumni.SubActivities.Non_IT_Jobs;
 
 public class Search_Vacancies extends AppCompatActivity {
     Button btnForgotSubmit;
@@ -20,6 +25,7 @@ public class Search_Vacancies extends AppCompatActivity {
     final CharSequence[] select_exp={"1 Year","2 Years","3 Years","4 Years","5 Years","> 5"};
     final CharSequence[] select_gender = {"Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu & Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","New Delhi","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttarakhand","Uttar Pradesh","West Bengal"};
     EditText etState,etExper,etSalary;
+    LinearLayout noniTJobs, iTJobs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +39,8 @@ public class Search_Vacancies extends AppCompatActivity {
         etState=(EditText)findViewById(R.id.et_state);
         etExper=(EditText)findViewById(R.id.et_experience);
         etSalary=(EditText)findViewById(R.id.et_salary);
+        noniTJobs = (LinearLayout) findViewById(R.id.non_it_jobs);
+        iTJobs = (LinearLayout) findViewById(R.id.it_jobs);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         etSalary.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,6 +117,22 @@ public class Search_Vacancies extends AppCompatActivity {
                     }
                 });alertdialog1.show();
 
+            }
+        });
+
+        noniTJobs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Non_IT_Jobs.class);
+                startActivity(intent);
+            }
+        });
+
+        iTJobs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),IT_Jobs.class);
+                startActivity(intent);
             }
         });
     }

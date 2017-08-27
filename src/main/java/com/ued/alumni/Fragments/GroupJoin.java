@@ -1,11 +1,13 @@
 package com.ued.alumni.Fragments;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.ued.alumni.Group_Profile;
 import com.ued.alumni.R;
 
 
@@ -21,6 +24,7 @@ import com.ued.alumni.R;
 public class GroupJoin extends Fragment implements View.OnClickListener{
 
     Button btn_group_join_one, btn_group_join_one_pressed;
+    CardView cardview_one_join;
    private boolean isjoinClicked = false;
 
     @Override
@@ -45,7 +49,16 @@ public class GroupJoin extends Fragment implements View.OnClickListener{
         btn_group_join_one.setOnClickListener(this);
         btn_group_join_one_pressed = (Button) view.findViewById(R.id.btn_grp_join_pressed);
         btn_group_join_one_pressed.setOnClickListener(this);
+        cardview_one_join = (CardView) view.findViewById(R.id.card_view_one);
        // joinGroup();
+
+        cardview_one_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity().getApplicationContext(), Group_Profile.class);
+                startActivity(i);
+            }
+        });
 
         // Inflate the layout for this fragment
         return view;
@@ -86,64 +99,13 @@ public class GroupJoin extends Fragment implements View.OnClickListener{
                 }
 
                 break;
+
+           /* case R.id.card_view_one:
+                Intent i = new Intent(getActivity().getApplicationContext(), Group_Profile.class);
+                startActivity(i);*/
         }
     }
 
-    /* public void joinGroup(){
-        btn_group_join_one.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             /*   if(isjoinClicked) {
-                isjoinClicked = false;
-                    btn_group_join.setImageResource(R.id.btn_grp_join_one);
-                    Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
-                }else{
-                    isjoinClicked = true;
-                    btn_group_join.setImageResource(R.drawable.icn_grp_join_rqst_pressed);
-                    Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_LONG).show();
-                }
-
-             switch(v.getId()){
-                 case R.id.btn_grp_join_one:
-                     if(isjoinClicked) {
-                         isjoinClicked = false;
-                         btn_group_join_one.setVisibility(View.VISIBLE);
-                         btn_group_join_one_pressed.setVisibility(View.GONE);
-                         Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
-                     }else{
-                         isjoinClicked = true;
-                         btn_group_join_one.setVisibility(View.GONE);
-                         btn_group_join_one_pressed.setVisibility(View.VISIBLE);
-                         Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_LONG).show();
-
-                     }
-                     break;
-                 case R.id.btn_grp_join_pressed:
-                     if(!isjoinClicked) {
-                         isjoinClicked = true;
-                         btn_group_join_one.setVisibility(View.GONE);
-                         btn_group_join_one_pressed.setVisibility(View.VISIBLE);
-                         Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_LONG).show();
-                     }else{
-                         isjoinClicked = false;
-                         btn_group_join_one.setVisibility(View.VISIBLE);
-                         btn_group_join_one_pressed.setVisibility(View.GONE);
-                         Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
-
-                     }
-                     break;
-
-
-                /* case R.id.btn_grp_join_pressed:
-                     isjoinClicked = true;
-                     btn_group_join_one.setVisibility(View.GONE);
-                     btn_group_join_one_pressed.setVisibility(View.VISIBLE);
-                     Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
-             }
-            }
-        });
-
-    }  */
 
 
 
