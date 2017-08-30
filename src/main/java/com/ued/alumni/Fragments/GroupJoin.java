@@ -73,12 +73,12 @@ public class GroupJoin extends Fragment implements View.OnClickListener{
                     isjoinClicked=false;
                 btn_group_join_one.setVisibility(View.VISIBLE);
                 btn_group_join_one_pressed.setVisibility(View.GONE);
-                Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_SHORT).show();
                 }else{
                     isjoinClicked = true;
                     btn_group_join_one.setVisibility(View.GONE);
                     btn_group_join_one_pressed.setVisibility(View.VISIBLE);
-                    Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -89,12 +89,12 @@ public class GroupJoin extends Fragment implements View.OnClickListener{
                     isjoinClicked=false;
                     btn_group_join_one.setVisibility(View.VISIBLE);
                     btn_group_join_one_pressed.setVisibility(View.GONE);
-                    Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "Group Leaved", Toast.LENGTH_SHORT).show();
                 }else{
                     isjoinClicked = true;
                     btn_group_join_one.setVisibility(View.GONE);
                     btn_group_join_one_pressed.setVisibility(View.VISIBLE);
-                    Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity().getApplicationContext(), "Group Joined", Toast.LENGTH_SHORT).show();
 
                 }
 

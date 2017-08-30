@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context="com.ued.alumni.Login">
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/IV_ProfilePic"
+                    android:layout_width="99dp"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/icn_error"
+                    android:transitionName="profile_pic"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sorry for inconvenience we\n are working on it. Till then\n have a faith in god."
+                    android:textColor="#807e8b"
+                    android:textSize="25sp"
+                    android:transitionName="username_transition" />
+
+
+            </LinearLayout>
+
+           </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -17,8 +59,8 @@
             android:id="@+id/toolbar_news_updates"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
 
     </android.support.design.widget.AppBarLayout>
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

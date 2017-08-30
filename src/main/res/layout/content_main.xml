@@ -299,6 +299,7 @@
                      android:text="kNJDBJBJBJDBJD"
                      android:textColor="@color/postMessage" />-->
 
+
                 <TextView
                     android:id="@+id/tvallpostdescription2"
                     android:layout_width="wrap_content"
@@ -654,7 +655,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:layout_marginLeft="14dp"
-                    android:text="Lost all my contacts. Please ping your contact number\n#feelingsicked"
+                    android:text="Here comes the bad Guy.\n#Nostalgic"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:textColor="@color/colorPrimary" />
@@ -665,7 +666,7 @@
                     android:layout_height="wrap_content"
                     android:maxHeight="340dp"
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -829,7 +830,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:layout_marginLeft="14dp"
-                    android:text="In Love with my Crush\n#SeniorCrush"
+                    android:text="First day of job.\n#FeelingAnxiety"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:textColor="@color/colorPrimary" />
@@ -840,7 +841,7 @@
                     android:layout_height="wrap_content"
                     android:maxHeight="340dp"
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="fitXY" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

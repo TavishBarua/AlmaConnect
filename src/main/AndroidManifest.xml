@@ -45,16 +45,20 @@
             android:label="@string/title_activity_vacancies"
             android:windowSoftInputMode="adjustUnspecified" />
         <activity android:name=".News_Updates" />
-        <activity android:name=".Fragments.ActivityMainFragmentGroup" />
+        <activity
+            android:name=".Fragments.ActivityMainFragmentGroup"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".People"
             android:label="@string/title_activity_people"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name=".SubActivities.Non_IT_Jobs" />
         <activity android:name=".SubActivities.NonITJobDescription" />
         <activity android:name=".SubActivities.IT_Jobs" />
         <activity android:name=".SubActivities.ITJobDescription" />
-        <activity android:name=".Group_Profile"></activity>
+        <activity android:name=".Group_Profile" />
+        <activity android:name=".SubActivities.Profile_Info"></activity>
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package com.ued.alumni;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,12 +24,15 @@ import com.ued.alumni.Utils.Constant;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    ImageView ivPostPic;
+    ImageView ivPostPic,ivPostPicOne,ivPostPicFour,ivPostPicThree;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ivPostPic=(ImageView)findViewById(R.id.ivallpostpic);
+        ivPostPicOne=(ImageView) findViewById(R.id.ivallpostpic1);
+        ivPostPicFour = (ImageView) findViewById(R.id.ivallpostpic4);
+        ivPostPicThree = (ImageView) findViewById(R.id.ivallpostpic3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,6 +59,9 @@ public class MainActivity extends AppCompatActivity
 
         try {
             Glide.with(this).load(R.drawable.post_new).into(ivPostPic);
+            Glide.with(this).load(R.drawable.img_prof_tavish_high).into(ivPostPicOne);
+            Glide.with(this).load(R.drawable.img_prof_pawan_high).into(ivPostPicFour);
+            Glide.with(this).load(R.drawable.img_prof_kshitij_high).into(ivPostPicThree);
         }catch (Exception e){
             e.printStackTrace();
         }
